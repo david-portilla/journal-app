@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export const LoginScreen = () => {
     return (
@@ -8,7 +8,7 @@ export const LoginScreen = () => {
 
             <form>
 
-                <input 
+                <input
                     type="text"
                     placeholder="Email"
                     name="email"
@@ -16,7 +16,7 @@ export const LoginScreen = () => {
                     autoComplete="off"
                 />
 
-                <input 
+                <input
                     type="password"
                     placeholder="Password"
                     name="password"
@@ -31,11 +31,11 @@ export const LoginScreen = () => {
                     Login
                 </button>
 
-                
+
                 <div className="auth__social-networks">
                     <p>Login with social networks</p>
 
-                    <div 
+                    <div
                         className="google-btn"
                     >
                         <div className="google-icon-wrapper">
@@ -47,11 +47,11 @@ export const LoginScreen = () => {
                     </div>
                 </div>
 
-                <Link 
+                <Link
                     to="/auth/register"
                     className="link"
                 >
-                    Create new account    
+                    Create new account
                 </Link>
 
             </form>
