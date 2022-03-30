@@ -3,8 +3,8 @@ import React from 'react'
 export const JournalEntry = () => {
     return (
         <div className="journal__entry pointer">
-            
-            <div 
+
+            <div
                 className="journal__entry-picture"
                 style={{
                     backgroundSize: 'cover',
@@ -13,11 +13,9 @@ export const JournalEntry = () => {
             ></div>
 
             <div className="journal__entry-body">
-                <p className="journal__entry-title">
-                    Un nuevo día
-                </p>
+                <p className="journal__entry-title">Un nuevo día</p>
                 <p className="journal__entry-content">
-                    Reprehenderit id in duis consectetur deserunt veniam fugiat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse laudantium ad in voluptatibus ipsam eum rerum suscipit quis consequatur officiis, ex aliquid minima mollitia, sit delectus blanditiis. Maiores, maxime.
                 </p>
             </div>
 
