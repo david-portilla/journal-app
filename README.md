@@ -9,3 +9,10 @@ In the project directory, you can run:
 ### `yarn test`
 ### `yarn build`
 ### `yarn eject`
+
+
+## Available Routes
+
+http://localhost:3000/
+http://localhost:3000/auth/login
+http://localhost:3000/auth/register

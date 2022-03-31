@@ -15,7 +15,7 @@ export const Sidebar = () => {
 
             <div className="journal__new-entry">
                 <i className="far fa-calendar-plus fa-5x"></i>
-                <p className="mt-5">New entry</p>
+                <p className="mt-5">Add new entry</p>
             </div>
 
             <JournalEntries />
