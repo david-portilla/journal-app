@@ -1,41 +1,64 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import {useForm} from '../../hooks/useForm';
 
 export const RegisterScreen = () => {
+
+    const [formValues, handleInputChange] = useForm({
+        name: 'David',
+        email: 'dportilla@gmail.com',
+        password: '12345',
+        password2: '12345',
+    })
+
+    const {name, email, password, password2} = formValues;
+    const handleRegister = (e) => {
+        e.preventDefault();
+        console.log(name, email, password, password2);
+    }
+
     return (
         <>
             <h3 className="auth__title">Register</h3>
 
-            <form>
+            <form onSubmit={handleRegister}>
 
-                <input 
+                <input
                     type="text"
                     placeholder="Name"
                     name="name"
                     className="auth__input"
                     autoComplete="off"
+                    value={name}
+                    onChange={handleInputChange}
                 />
 
-                <input 
+                <input
                     type="text"
                     placeholder="Email"
                     name="email"
                     className="auth__input"
                     autoComplete="off"
+                    value={email}
+                    onChange={handleInputChange}
                 />
 
-                <input 
+                <input
                     type="password"
                     placeholder="Password"
                     name="password"
                     className="auth__input"
+                    value={password}
+                    onChange={handleInputChange}
                 />
 
-                <input 
+                <input
                     type="password"
                     placeholder="Confirm password"
                     name="password2"
                     className="auth__input"
+                    value={password2}
+                    onChange={handleInputChange}
                 />
 
 
@@ -46,9 +69,7 @@ export const RegisterScreen = () => {
                     Register
                 </button>
 
-               
-
-                <Link 
+                <Link
                     to="/auth/login"
                     className="link"
                 >
