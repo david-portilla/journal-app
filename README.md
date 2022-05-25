@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### npm install
-### `yarn start`
-### `yarn test`
-### `yarn build`
-### `yarn eject`
+### `npm install`
+### `npm start`
+### `npm test`
+### `npm build`
+### `npm eject`
 
 
 ## Available Routes
